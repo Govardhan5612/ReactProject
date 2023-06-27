@@ -1,10 +1,5 @@
 .App {
   text-align: center;
-  background-color: #61dafb;
-  display: flex;
-  padding-left: 450px;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 .total{
   text-align: start;
