@@ -1,16 +1,15 @@
 import { Component } from "react";
 import Image from "../logo1.png";
+import { Link } from "react-router-dom";
 
 class Home extends Component {
     render() {
-        const name = "Bridgelabz";
         const onClickImage = () => {
           console.log("On click image");
           window.open('https://www.bridgelabz.com', 'blank');
         }
         return (
             <div>
-                <h3>Hello From {name}</h3>
                 <img src={Image} alt='' width='100' height='100' onClick={onClickImage}></img>
                 <p>At BridgeLabz, we're a community of</p>
                 <li>technologies</li>
@@ -25,6 +24,9 @@ class Home extends Component {
                     To Known about us, visit BridgeLabz to learn even more about our mission<br />
                     i.e. Employability to all.
                 </p>
+                <Link to="/footer">
+            <input type="submit" value="Back to Footer"/>
+        </Link>
             </div>
         );
     }
